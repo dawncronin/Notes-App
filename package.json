@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dawncronin/Notes-App/issues"
   },
-  "homepage": "https://github.com/dawncronin/Notes-App#readme"
+  "homepage": "https://github.com/dawncronin/Notes-App#readme",
+  "dependencies": {
+    "validator": "^13.1.17"
+  }
 }
