@@ -3,8 +3,7 @@ const fs = require('fs')
 
 const addNote = (title, body) =>{
     const notes = loadNotes()
-
-    const duplicateNote = notes.find( (note) =>  note.title === title)
+    const duplicateNote = notes.find( (note) =>  note.title === title) 
 
     if (!duplicateNote) {
         notes.push({
@@ -27,12 +26,12 @@ const removeNote = (title) => {
     } else {
         console.log(chalk.red("Note removed"))
     }
+
     saveNotes(newNotes)
 }
 
 const listNotes = () => {
     const notes = loadNotes()
-
     console.log(chalk.magenta("Your notes:"))
     notes.forEach((note) => console.log(note.title))
 }
